@@ -7,7 +7,7 @@ import NavbarDrawer from './navbar-drawer';
 import Image from 'components/image';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
-
+import Link from 'next/link';
 import menuItems from './header.data';
 import lock from 'assets/images/icons/lock.png';
 
@@ -62,7 +62,7 @@ export default function Header() {
                     Login
                   </button> */}
                   <Button variant="text" sx={styles.getStarted}>
-                   Contact Us
+                    <Link href="/contact-us"><a style={{"text-decoration": "none"}} >Contact Us</a></Link>
                   </Button>
                 </Flex>
                 <NavbarDrawer />

@@ -3,7 +3,7 @@ import { jsx, Box, Container, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
 import Image from 'components/image';
-import messenger from 'assets/images/messenger.png';
+import messenger from 'assets/images/capitalgarms.png';
 import emoji from 'assets/images/icons/emoji.png';
 
 const data = [

@@ -24,7 +24,7 @@ export default function IndexPage() {
         <Support />
         <PremiumFeature />
         <AppFeature />
-        <Dashboard />
+        {/* <Dashboard /> */}
         <Pricing />
         {/* <Testimonials /> */}
         <Subscribe />

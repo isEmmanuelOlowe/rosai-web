@@ -10,7 +10,7 @@ const Subscribe = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Subscribe to get notified about update"
+          title="Subscribe to get notified about updates"
           description="By subscribing with your mail, you will accept our privacy policy"
         />
         <SubscriptionForm buttonLabel="Subscribe" sx={styles.subscriptionForm} />

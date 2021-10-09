@@ -1,4 +1,4 @@
-/** @jsx jsx */
+ /** @jsx jsx */
 import { jsx, Box, Container, Grid } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Accordion from 'components/accordion/accordion';
@@ -11,8 +11,8 @@ const data = [
     title: 'Initial Ideas',
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        We will work with you to get an impression of what you what the final product to look like.
+        Together we'll build a list of key requirements.
       </div>
     ),
   },
@@ -20,8 +20,7 @@ const data = [
     title: 'Design and Development',
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        We'll beginning development of your website, we'll focus on implemetning the requirements first and adding the finish in touches later.
       </div>
     ),
   },
@@ -29,8 +28,7 @@ const data = [
     title: `Integration of Marketing Tools`,
     contents: (
       <div>
-        Get your blood tests delivered at let collect sample from the victory of
-        the managements that supplies best design system guidelines ever.
+        We'll add all the marketing tools your website needs (Google Analytics, etc...) and ensure the website is SEO Optimised.
       </div>
     ),
   },

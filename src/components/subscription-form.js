@@ -28,8 +28,8 @@ const SubscriptionForm = ({ buttonLabel, ...props }) => {
               value={email}
               onChange={handleEmail}
             />
-          <input maxlength="51" name="mailaccount_r" value={email} size="51" type="hidden"/>
-          <input maxlength="51" name="mailaccount2_r" type="hidden" value={email} size="51"/>
+          <input maxLength="51" name="mailaccount_r" value={email} size="51" type="hidden"/>
+          <input maxLength="51" name="mailaccount2_r" type="hidden" value={email} size="51"/>
                   <input name="FBMLNAME" type="hidden" value="mailinglist@rosai.co.uk"/>
                     <input name="FBLANG" type="hidden" value="en"/>
                       <input name="FBURLERROR_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/error.en.html"/>

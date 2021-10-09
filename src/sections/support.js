@@ -9,7 +9,7 @@ const data = [
     id: 1,
     icon: support,
     title: 'Do you need help with SEO?',
-    description: `t’s not enough to have a website. You need to get found! We offer affordable SEO services increasing your competitiveness in search engines and boosting your search ranks.
+    description: `It’s not enough to have a website. You need to get found! We offer affordable SEO services increasing your competitiveness in search engines and boosting your search ranks.
     We offer free Audits! to help access the SEO health of your site.`,
   },
   {

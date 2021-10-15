@@ -144,8 +144,7 @@ const styles = {
   },
   button :{
     "backgroundColor": "#FFCC77;",
-    a: {
-      "textDecoration": "none"},
+    "color":"#292929",
     "padding":"15px",
     "marginTop": "40px",
     "marginLeft": "10px",

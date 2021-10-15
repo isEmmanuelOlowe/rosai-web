@@ -55,7 +55,7 @@ const  Header = ({ router }) =>{
                           onClick={handleCloseMenu}
                         />}
                       {!mainPage &&<Link href={"/#" + path}>
-                      <a style={{"padding":"10px", "textDecoration": "none"}}>
+                      <a style={{"color":"#292929", "padding":"0 15px", "textDecoration": "none"}}>
                         {label}
                         </a></Link>}
                       </li>

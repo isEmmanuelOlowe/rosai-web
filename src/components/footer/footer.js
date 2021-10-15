@@ -18,8 +18,8 @@ const menuItems = [
     label: 'Supports',
   },
   {
-    path: '#marketing',
-    label: 'Marketing',
+    path: '/privacypolicy',
+    label: 'Privacy Policy',
   },
   {
     path: '#faq',

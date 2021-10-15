@@ -7,11 +7,13 @@ import NavbarDrawer from './navbar-drawer';
 import Image from 'components/image';
 import Logo from 'components/logo';
 import { NavLink } from 'components/link';
+import { withRouter } from 'next/router'
 import Link from 'next/link';
 import menuItems from './header.data';
 import lock from 'assets/images/icons/lock.png';
 
-export default function Header() {
+const  Header = ({ router }) =>{
+  const mainPage = router.pathname === "/";
   const [state, setState] = useState({
     isMobileMenu: false,
     isSticky: false,
@@ -47,11 +49,15 @@ export default function Header() {
                   >
                     {menuItems.map(({ path, label }, i) => (
                       <li key={i}>
-                        <NavLink
+                        {mainPage &&<NavLink
                           path={path}
                           label={label}
                           onClick={handleCloseMenu}
-                        />
+                        />}
+                      {!mainPage &&<Link href={"/#" + path}>
+                      <a style={{"padding":"10px", "textDecoration": "none"}}>
+                        {label}
+                        </a></Link>}
                       </li>
                     ))}
                   </Box>
@@ -75,6 +81,7 @@ export default function Header() {
   );
 }
 
+export default withRouter(Header);
 const styles = {
   headerWrapper: {
     backgroundColor: 'transparent',

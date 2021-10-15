@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Router from 'next/router';
 import { useRouter } from 'next/router';
 import { initGA, logPageView } from 'analytics';
+import * as ga from '../lib/ga';
 import 'rc-drawer/assets/index.css';
 import 'rc-tabs/assets/index.css';
 import 'swiper/swiper-bundle.css';

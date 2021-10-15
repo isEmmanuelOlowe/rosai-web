@@ -1,7 +1,9 @@
 /** @jsx jsx */
 import { jsx, Box, Image, Button, MenuButton } from 'theme-ui';
 import React, { useContext } from 'react';
-import { Link } from 'react-scroll';
+import { withRouter } from 'next/router'
+import { Link as ScrollLink} from 'react-scroll';
+import Link  from 'next/link';
 import { rgba } from 'polished';
 import { DrawerContext } from 'contexts/drawer/drawer-context';
 import Drawer from 'components/drawer';
@@ -9,7 +11,8 @@ import Logo from 'components/logo';
 import menuItems from './header.data';
 import close from 'assets/images/icons/close.png';
 
-const NavbarDrawer = () => {
+const NavbarDrawer = ({router}) => {
+  const mainPage = router.pathname === "/";
   const { state, dispatch } = useContext(DrawerContext);
 
   // Toggle drawer
@@ -44,7 +47,7 @@ const NavbarDrawer = () => {
         <Box as="ul" sx={styles.navbar}>
           {menuItems.map(({ path, label }, i) => (
             <Box as="li" key={i}>
-              <Link
+              {mainPage && <ScrollLink
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -53,15 +56,22 @@ const NavbarDrawer = () => {
                 duration={500}
               >
                 {label}
-              </Link>
+              </ScrollLink> }
+              {!mainPage && <Link href={"/#" + path}>
+              <a style={{"textDecoration": "none"}}>
+                {label}
+                </a></Link>}
             </Box>
           ))}
+      <Button variant="text" sx={styles.button}>
+          <Link href="/contact-us"><a style={{"paddingLeft": "15px", "textDecoration": "none"}} >Contact Us</a></Link>
+        </Button>
         </Box>
       </Box>
     </Drawer>
   );
 };
-export default NavbarDrawer;
+export default withRouter(NavbarDrawer);
 
 const styles = {
   handler: {
@@ -131,6 +141,14 @@ const styles = {
     '.active': {
       color: 'primary',
     },
+  },
+  button :{
+    "backgroundColor": "#FFCC77;",
+    a: {
+      "textDecoration": "none"},
+    "padding":"15px",
+    "marginTop": "40px",
+    "marginLeft": "10px",
   },
   donateNow: {
     fontSize: 1,

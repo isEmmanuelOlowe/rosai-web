@@ -181,7 +181,7 @@ const Pricing = () => {
         <SectionHeading
           sx={styles.heading}
           title="Web Development Packages"
-          description="View our pricing plans."
+          description="View our pricing plans which include hosting."
         />
         <Flex sx={styles.priceSwitcher}>
           <Text as="span">Monthly Plan</Text>

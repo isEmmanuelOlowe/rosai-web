@@ -61,7 +61,9 @@ const AppFeature = () => {
                 </Flex>
               ))}
             </Box>
-            <LearnMore label="Explore more" path="#!" />
+            <br/>
+            <br/>
+            {/* <LearnMore label="Explore more" path="#!" /> */}
           </Box>
           <Box sx={styles.illustration}>
             <Image src={app} alt="workHard" />

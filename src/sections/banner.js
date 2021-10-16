@@ -30,13 +30,14 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1">
-              Quality Web Development for Small Business
+              Free Quality Web Development for Small Business
             </Heading>
             <Text as="p">
-
-              You need an online presence. A website will increase your potential customer base and create a brand which makes your business easily recognisable.
-
-              We design websites and ensure you are able to reach your audience.
+              You need an online presence. <br></br>
+              We design Quality Websites. <br></br>
+              We are looking to add websites to our portfolio of work. Contact us now to find out more about our limited time free bespoke website design (excluding hosting).
+              {/* A website will increase your potential customer base and create a brand which makes your business easily recognisable. */}
+              {/* We design websites and ensure you are able to reach your audience. */}
             </Text>
             <SubscriptionForm buttonLabel="Subscribe" sx={styles.subscriptionForm} />
             <Flex sx={styles.sponsoredBy}>

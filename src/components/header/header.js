@@ -69,7 +69,7 @@ const  Header = ({ router }) =>{
                   </button> */}
                   <Button variant="text" sx={styles.getStarted}>
                     {/* <Link href="/contact-us"><a style={{"textDecoration": "none"}} >Contact Us</a></Link> */}
-                    <a href="mailto:contact@rosai.co.uk" style={{"textDecoration": "none"}}>Contact Us</a>
+                    <a href="mailto:contact@rosai.co.uk" style={{"color":"inherit","textDecoration": "none"}}>Contact Us</a>
                   </Button>
                 </Flex>
                 <NavbarDrawer />

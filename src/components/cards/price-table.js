@@ -41,7 +41,9 @@ const PriceTable = ({ price, isAnnual }) => {
       </Box>
       <Box className="priceButton">
         <Button sx={styles.button} variant="primaryMd">
-          {price.buttonText}
+          <a href="mailto:contact@rosai.co.uk" style={{"color":"inherit","textDecoration":"none"}}>
+            {price.buttonText}
+          </a>
         </Button>
       </Box>
     </Box>

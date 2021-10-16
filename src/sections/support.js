@@ -33,7 +33,7 @@ const Support = () => {
               <Flex as="figure" sx={styles.media}>
                 <Image src={item?.icon} alt={item?.title} />
               </Flex>
-                <a href={"mailto:contact@rosai.co.uk?subject=" + item?.subject}>
+                <a href={"mailto:contact@rosai.co.uk?subject=" + item?.subject} style={{"textDecoration":"none"}}>
                   <Box sx={styles.content}>
                     <Heading>
                       {item?.title} <Image src={rightArrow} alt="rightArrow" />

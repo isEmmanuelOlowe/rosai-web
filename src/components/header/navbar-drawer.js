@@ -65,7 +65,7 @@ const NavbarDrawer = ({router}) => {
           ))}
       <Button variant="text" sx={styles.button}>
           {/* <Link href="/contact-us"><a style={{"paddingLeft": "15px", "textDecoration": "none"}} >Contact Us</a></Link> */}
-          <a href="mailto:contact@rosai.co.uk" style={{"paddingLeft": "15px", "textDecoration": "none"}}>Contact Us</a>
+          <a href="mailto:contact@rosai.co.uk" style={{"color":"inherit","paddingLeft": "15px", "textDecoration": "none"}}>Contact Us</a>
         </Button>
         </Box>
       </Box>

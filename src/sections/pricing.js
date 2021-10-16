@@ -111,11 +111,6 @@ const data = [
         isAvailable: false,
         title: `Online Ordering via QR Code Menu`
       },
-      {
-        id: 10,
-        isAvailable: false,
-        title: ``
-      }
     ],
   },
   {

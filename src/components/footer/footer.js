@@ -6,7 +6,7 @@ import Logo from 'components/logo';
 
 const menuItems = [
   {
-    path: '/#home',
+    path: '/',
     label: 'Home',
   },
 

@@ -55,7 +55,7 @@ const  Header = ({ router }) =>{
                           onClick={handleCloseMenu}
                         />}
                       {!mainPage &&<Link href={"/#" + path}>
-                      <a style={{"color":"#292929", "padding":"0 20px", "textDecoration": "none"}}>
+                      <a style={{"color":"#292929", "padding":"0 15px", "textDecoration": "none"}}>
                         {label}
                         </a></Link>}
                       </li>
@@ -68,7 +68,8 @@ const  Header = ({ router }) =>{
                     Login
                   </button> */}
                   <Button variant="text" sx={styles.getStarted}>
-                    <Link href="/contact-us"><a style={{"textDecoration": "none"}} >Contact Us</a></Link>
+                    {/* <Link href="/contact-us"><a style={{"textDecoration": "none"}} >Contact Us</a></Link> */}
+                    <a href="mailto:contact@rosai.co.uk" style={{"textDecoration": "none"}}>Contact Us</a>
                   </Button>
                 </Flex>
                 <NavbarDrawer />

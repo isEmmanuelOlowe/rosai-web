@@ -3,18 +3,21 @@ import { jsx, Container, Grid, Box, Flex, Heading, Text } from 'theme-ui';
 import Image from 'components/image';
 import support from 'assets/images/support.png';
 import rightArrow from 'assets/images/icons/right-arrow.png';
+import Link from 'next/link';
 
 const data = [
   {
     id: 1,
     icon: support,
     title: 'Do you need help with SEO?',
+    subject:'SEO Services Help',
     description: `It’s not enough to have a website. You need to get found! We offer affordable SEO services increasing your competitiveness in search engines and boosting your search ranks.
     We offer free Audits! to help access the SEO health of your site.`,
   },
   {
     id: 2,
     icon: support,
+    subject: 'Graphic Design Services Help',
     title: 'Do you need help with Graphic Design',
     description: `You need the perfect images for your business. Stunning visuals grab attention and can turn leads into customers. Design is a reflection of your business. Our job is to show customers how strong your brand is.`,
   },
@@ -30,12 +33,14 @@ const Support = () => {
               <Flex as="figure" sx={styles.media}>
                 <Image src={item?.icon} alt={item?.title} />
               </Flex>
-              <Box sx={styles.content}>
-                <Heading>
-                  {item?.title} <Image src={rightArrow} alt="rightArrow" />
-                </Heading>
-                <Text as="p">{item?.description}</Text>
-              </Box>
+                <a href={"mailto:contact@rosai.co.uk?subject=" + item?.subject}>
+                  <Box sx={styles.content}>
+                    <Heading>
+                      {item?.title} <Image src={rightArrow} alt="rightArrow" />
+                    </Heading>
+                    <Text as="p">{item?.description}</Text>
+                  </Box>
+                </a>
             </Flex>
           ))}
         </Grid>

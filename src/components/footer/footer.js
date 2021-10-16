@@ -9,22 +9,15 @@ const menuItems = [
     path: '/#home',
     label: 'Home',
   },
-  {
-    path: '#advertise',
-    label: 'Advertise',
-  },
-  {
-    path: '#supports',
-    label: 'Supports',
-  },
+
   {
     path: '/privacypolicy',
     label: 'Privacy Policy',
   },
-  {
-    path: '#faq',
-    label: 'FAQ',
-  },
+  // {
+  //   path: '#faq',
+  //   label: 'FAQ',
+  // },
 ];
 
 export default function Footer() {

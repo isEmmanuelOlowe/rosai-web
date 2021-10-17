@@ -104,7 +104,7 @@ const data = [
       {
         id: 8,
         isAvailable: true,
-        title: `QR Code Website and Menu`
+        title: `QR Code Website and Menu Card Options`
       },
       {
         id: 9,
@@ -152,15 +152,20 @@ const data = [
       {
         id: 6,
         isAvailable: true,
-        title: `Online Booking System`,
+        title: `Inventory Management System`,
       },
       {
         id: 7,
         isAvailable: true,
-        title: `Keyword Analysis Report`,
+        title: `Online Booking System`,
       },
       {
         id: 8,
+        isAvailable: true,
+        title: `Keyword Analysis Report`,
+      },
+      {
+        id: 9,
         isAvailable: true,
         title: `Competitor Analysis Report`
       },

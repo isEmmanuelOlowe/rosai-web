@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
             <Layout>
                 <SEO
                     title="Privacy Policy | ROSAI"
-                    description="The privacy policy of ROSAI"/>
+                    description="The privacy policy of ROSAI.At ROSAI, accessible from rosai.co.uk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by ROSAI and how we use it."/>
                 <div style={{padding: "75px"}}>
                     <h1>Privacy Policy for ROSAI</h1>
                     <p>At ROSAI, accessible from rosai.co.uk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by ROSAI and how we use it.</p>

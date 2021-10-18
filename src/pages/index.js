@@ -18,7 +18,7 @@ export default function IndexPage() {
       <Layout>
         <SEO
           title="Web Development Company | ROSAI"
-          description="Collection of free top of the line startup landing templates built using react/ next js. Free to download, simply edit and deploy! Updated weekly!"
+          description="You need a website? We design beautiful modern websites for small businessess. We handle all the technical stuff so you can focus on what matters."
         />
         <Banner />
         <Support />
